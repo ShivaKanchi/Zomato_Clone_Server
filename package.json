@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./src -d dist",
-    "start": "nodemon index.js",
+    "build": "babel ./src -d dist",
+    "start": "npm run build && node dist/index.js",
     "dev": "nodemon --exec babel-node ./src/index.js"
   },
   "author": "ShivaKanchi",
