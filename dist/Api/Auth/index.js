@@ -66,7 +66,7 @@ Router.get("/google/callback", _passport.default.authenticate("google", {
   // return res.status(200).json({
   //     token: req.session.passport.user.token,
   // });
-  return res.redirect(`http://localhost:3000/google/${req.session.passport.user.token}`);
+  return res.redirect(`https://zomato-clone-shiva.onrender.com/google/${req.session.passport.user.token}`);
 });
 var _default = Router;
 exports.default = _default;

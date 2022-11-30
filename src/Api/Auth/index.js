@@ -62,7 +62,7 @@ Router.get("/google/callback", passport.authenticate("google",
         //     token: req.session.passport.user.token,
         // });
         return res.redirect(
-            `http://localhost:3000/google/${req.session.passport.user.token}`
+            `https://zomato-clone-shiva.onrender.com/google/${req.session.passport.user.token}`
         );
     }
 );
