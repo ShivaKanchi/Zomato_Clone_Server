@@ -26,7 +26,7 @@ privateRouteConfig(passport);
 googleAuthConfig(passport);
 const zomato = express(); //like app  
 
-zomato.use(cors({ origin: "http://localhost:3000" }));
+zomato.use(cors());
 zomato.use(helmet());
 zomato.use(express.json());
 zomato.use(session({ secret: process.env.JWTSECRET }));
